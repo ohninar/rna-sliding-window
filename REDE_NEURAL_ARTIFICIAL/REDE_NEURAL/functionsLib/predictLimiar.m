@@ -12,11 +12,8 @@ function p = predictLimiar(Theta1, Theta2, X, limiar)
 
     h1 = sigmoid([ones(m, 1) X] * Theta1');% adiciona uma coluna de 1 a X e mutiplica pela transposta de Theta1
     h2 = sigmoid([ones(m, 1) h1] * Theta2');
-    [dummy, p] = max(h2, [], 2);% retorna o valor MAXIMO DE CADA LINHA
-    %[MAXIMO DE CADA LINHA(dummy), INDICE COLUNA(p)]
+    [dummy, p] = max(h2, [], 2);
     % =========================================================================
-    %percorro o valor do acerto encontrado e se não for maior que a limiar,
-    %seto como zero, caso seja maior, continua o mesmo valor.
     for i=1:m,
         if dummy(i) >= limiar,
             p(i) = p(i);
