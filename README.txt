@@ -9,3 +9,4 @@ outros foram modificados e desenvolvidos por mim.
 Este repositório tem o foco apenas em Rede neural artificial, que foi e esta sendo
 utilizado em projetos da universidade, bem como projetos pessoais.
 
+Desenvolvidos em linguagem Matlab/Octave.
